@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Set minimum height of the body to 100% of the viewport height */
+}
+
+header {
+  background-color: white;
+  border: 2px solid black;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 25px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+main {
+  flex: 1;
+  /* Let the main section grow to fill remaining space */
+  padding: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  /* Prevent the footer from shrinking */
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.card {
+  width: calc(33.33% - 20px);
+  /* Adjust width according to the number of cards and spacing */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card h4 {
+  margin-top: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+.additional-content-container {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.additional-content {
+  width: calc(50% - 20px);
+  /* Two items per row with spacing */
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  border: 2px solid black;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .additional-content {
+    width: 100%;
+    /* One item per row on smaller screens */
+  }
+}
+#card-two {
+  background-color: lightblue;
+  transition: opacity 0.3s ease-in-out;
+  /* Add a transition for smooth effect */
+}
+
+#card-two.hidden {
+  opacity: 0;
+  /* Hide the card by setting opacity to 0 */
+}
+
+/*# sourceMappingURL=styles.css.map */
